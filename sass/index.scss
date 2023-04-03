@@ -1,0 +1,49 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+//Variables
+$blue: rgb(7, 31, 50);
+
+//Mixin
+
+//CSS
+body{
+    font-family: 'Arimo', sans-serif;
+    color: $blue;
+}
+.logo {
+  width: 10%;
+}
+
+ul {
+  display: flex;
+  gap: 1em;
+  li {
+    padding: 10px;
+  }
+}
+
+nav {
+  a {
+    text-decoration: none;
+
+  }
+  li {
+    list-style: none;
+  }
+  .push{
+    margin-left: auto;
+  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+
+button{
+    border : 1px solid rgb(223,224,225); 
+   
+    
+}

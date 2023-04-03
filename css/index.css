@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+body {
+  font-family: "Arimo", sans-serif;
+  color: rgb(7, 31, 50);
+}
+
+.logo {
+  width: 10%;
+}
+
+ul {
+  display: flex;
+  gap: 1em;
+}
+ul li {
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+}
+nav li {
+  list-style: none;
+}
+nav .push {
+  margin-left: auto;
+}
+
+button {
+  border: 1px solid rgb(223, 224, 225);
+}
+
+/*# sourceMappingURL=index.css.map */
