@@ -51,8 +51,7 @@ section {
 }
 
 main {
-  padding-bottom: 60px;
-  margin-top: 5%;
+  margin-top: 6.5%;
   display: flex;
 }
 .logo {
@@ -61,6 +60,8 @@ main {
 
 header {
   nav {
+    border-bottom: 2px solid $grey;
+
     ul {
       display: flex;
       gap: 1em;
@@ -244,7 +245,7 @@ footer {
   }
   .visit {
     flex-direction: column;
-
+    border-right: 1px solid $grey;
     font-weight: bold;
     margin-top: 4%;
   }
@@ -261,6 +262,8 @@ footer {
     background-color: red;
   }
   nav {
+    border-top: 1px solid $grey;
+
     ul {
       display: flex;
       gap: 1em;
