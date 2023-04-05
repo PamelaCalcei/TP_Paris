@@ -1,49 +1,346 @@
 //Font
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
 
 //Variables
 $blue: rgb(7, 31, 50);
+$lightblue: rgb(53, 75, 207);
+$lighterblue: rgb(0, 130, 248);
+$grey: rgb(241, 241, 241);
 
 //Mixin
+@mixin decoration() {
+  text-decoration: none;
+  list-style: none;
+}
 
+@mixin bouton() {
+  background-color: rgb(244, 243, 243);
+  align-items: center;
+  border: 1px solid rgb(244, 243, 243);
+  font-size: 80%;
+  font-weight: bold;
+}
 //CSS
-body{
-    font-family: 'Arimo', sans-serif;
-    color: $blue;
+html,
+body {
+  font-family: "Arimo", sans-serif;
+  color: $blue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  .wdo {
+    display: flex;
+    flex-direction: column;
+  }
+  .article2 {
+    display: flex;
+    margin-top: 20%;
+  }
+  .img-middle {
+    width: 70%;
+  }
+  .description {
+    width: 50%;
+    margin-left: 15%;
+  }
+}
+
+main {
+  padding-bottom: 60px;
+  margin-top: 5%;
+  display: flex;
 }
 .logo {
   width: 10%;
 }
 
-ul {
-  display: flex;
-  gap: 1em;
-  li {
-    padding: 10px;
+header {
+  nav {
+    ul {
+      display: flex;
+      gap: 1em;
+      width: 100%;
+      li {
+        padding: 10px;
+      }
+    }
+    a {
+      @include decoration();
+      color: $blue;
+      font-weight: bold;
+    }
+    a:hover {
+      border-top: 5px solid $blue;
+    }
+    li {
+      @include decoration();
+    }
+    .push {
+      margin-left: 37%;
+    }
+    .push2 {
+      color: $lightblue;
+    }
+    .push2:hover {
+      border-top: 5px solid $lightblue;
+    }
+    .fa-magnifying-glass {
+      color: $blue;
+      margin-right: 1%;
+    }
+    .recherche {
+      width: 10%;
+      @include bouton();
+    }
+    .recherche:hover {
+      .fa-magnifying-glass {
+        color: white;
+      }
+      background-color: $blue;
+    }
+    .recherche:hover {
+      color: white;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 1;
   }
 }
 
-nav {
-  a {
-    text-decoration: none;
-
-  }
-  li {
-    list-style: none;
-  }
-  .push{
-    margin-left: auto;
-  }
-  width: 100%;
+.secleft {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  
+  width: 80%;
+  .carte {
+    font-size: 80%;
+  }
+  a {
+    @include decoration();
+    color: red;
+  }
+  .location {
+    display: flex;
+    margin-bottom: 3%;
+  }
+  i {
+    color: $lightblue;
+    margin-right: 10%;
+  }
+  .title {
+    font-size: 140%;
+    font-weight: bold;
+  }
+  button {
+    @include bouton();
+    height: 1%;
+    padding: 4%;
+  }
+  .identite {
+    display: flex;
+    border-top: 1px solid rgb(230, 232, 234);
+    width: 60%;
+    margin-top: 6%;
+    padding: 3%;
+  }
+  .identite:hover {
+    border-top: 1px solid $blue;
+  }
+  img {
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid $grey;
+    background-color: $grey;
+    padding: 2%;
+  }
+  img:hover {
+    color: white;
+    background-color: $blue;
+  }
+  p {
+    margin-left: 15%;
+  }
 }
 
-button{
-    border : 1px solid rgb(223,224,225); 
-   
-    
+#test {
+  position: relative;
+  background-color: white;
+  width: 80%;
+  margin: -20% auto auto auto;
+  padding: 0% 0% 0% 2%;
+}
+
+.content-article {
+  margin-top: -6%;
+}
+
+.une {
+  margin-top: -5%;
+  margin-left: 3%;
+  background-color: $lighterblue;
+  padding: 10px;
+  width: 10%;
+  transform: skew(0deg, -7deg);
+  color: white;
+  position: absolute;
+}
+
+.secright {
+  article {
+    padding-bottom: 4%;
+    border-bottom: 1px solid rgb(230, 232, 234);
+    margin-left: 30%;
+    display: flex;
+    .jour,
+    .mois {
+      font-size: 190%;
+      font-weight: bold;
+      width: 50%;
+    }
+    .mois {
+      margin-top: -80%;
+    }
+    .agenda,
+    a,
+    img {
+      margin-top: 6.4%;
+      margin-left: 5%;
+    }
+    a {
+      color: red;
+      font-weight: bold;
+      font-size: 80%;
+      @include decoration();
+    }
+    p {
+      width: 50%;
+    }
+    img {
+      margin-top: 2%;
+      width: 80%;
+    }
+  }
+}
+footer {
+  display: flex;
+  .reseaux {
+    width: 25%;
+    justify-content: space-around;
+  }
+  .left-middle {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .visit {
+    flex-direction: column;
+
+    font-weight: bold;
+    margin-top: 4%;
+  }
+  .red {
+    color: red;
+    padding: 1em;
+    margin-left: -30%;
+    margin-top: -6%;
+    align-self: center;
+    font-size: 65%;
+  }
+  .red:hover {
+    color: white;
+    background-color: red;
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: 1em;
+      width: 100%;
+      li {
+        padding: 10px;
+      }
+    }
+    margin-top: 7%;
+    width: 100%;
+    a {
+      font-size: 70%;
+      font-weight: bold;
+      @include decoration();
+      color: $blue;
+    }
+    li {
+      @include decoration();
+    }
+  }
+  img {
+    width: 14%;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+  select {
+    margin-left: 3%;
+    appearance: none;
+    padding-right: 20px;
+    background-color: $grey;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='red'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: none;
+    padding: 1rem 2rem 1rem 1rem;
+    position: relative;
+    font-size: 1.3rem;
+  }
+  i {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .left {
+    background-color: rgb(251, 251, 251);
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    background-color: $blue;
+    color: white;
+    align-items: center;
+  }
+  button {
+    border: 1px solid red;
+    background-color: red;
+    padding: 1.2%;
+    color: white;
+    margin-left: 3%;
+    width: 50%;
+    font-family: "Arimo", sans-serif;
+  }
+  div {
+    display: flex;
+  }
+
+  input {
+    width: 450px;
+    height: 60px;
+  }
+  span {
+    color: red;
+  }
+}
+
+h1 {
+  font-size: 300%;
+}
+
+.location {
+  padding: 3%;
+  margin-top: 1%;
 }

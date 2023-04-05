@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paris.fr, site officiel de la Ville de paris</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   </head>
   <body>
     <header>
@@ -18,38 +17,183 @@
           <li><a href="">Participez !</a></li>
           <li><a href="">Que faire à Paris ?</a></li>
           <li><a href="">Jeux 2024</a></li>
-          <button>Recherche</button>
-          <li class='push'><a href="">Mon Paris</a></li>
+          <button class="recherche">
+            <i class="fa-solid fa-magnifying-glass"></i>Recherche
+          </button>
+          <li class="push">
+            <a class="push2" href=""
+              >Mon Paris <i class="fa-solid fa-user"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-        <section>
-            <p>Accès rapides</p>
-            <button>PISCINES</button>
-            <button>PARCS, JARDINS ET BOIS</button>
-            <button>MAIRIES D'ARRONDISSEMENT</button>
-            <button>BIBLIOTHÈQUES</button>
-            <button>VOIR LA CARTE</button>
-        </section>
-        <section>
-            <article>
-                <img src="image/enfants.jpg" alt="">
-                <h1>Les petits Parisiens dans les starting-block pour les Jeux de Paris 2024</h1>
-                <p>Activités périscolaires, ateliers sportifs et artistiques, initiation à la nage et aux disciplines paralympiques... Paris profite des prochains Jeux pour...</p>
-            </article>
-            <article>
-                <img src="image/vert.jpg" alt="">
-                <p>Que faire à Paris cette semaine ?</p>
-            </article>
-            <article>
-                <img src="image/pas-contente.jpg" alt="">
-                <p>12 expositions à ne pas manquer au printemps</p>
-            </article>
-            <article>
-                <h2>Trotinettes en libre-service: les resultats de la votation</h2>
-            </article>
-        </section>
+      <section class="secleft">
+        <p class="title">Accès rapides</p>
+        <button class="location">
+          <i class="fa-solid fa-location-dot"></i>PISCINES
+        </button>
+        <button class="location">
+          <i class="fa-solid fa-location-dot"></i>PARCS, JARDINS ET BOIS
+        </button>
+        <button class="location">
+          <i class="fa-solid fa-location-dot"></i>MAIRIES D'ARRONDISSEMENT
+        </button>
+        <button class="location">
+          <i class="fa-solid fa-location-dot"></i>BIBLIOTHÈQUES
+        </button>
+        <a class="carte" href="">VOIR LA CARTE</a>
+        <div class="identite">
+          <img src="image/id-card.svg" alt="" />
+          <p>Carte d'identité / Passeport</p>
+        </div>
+        <div class="identite">
+          <img src="image/briefcase.svg" alt="" />
+          <p>Travailler à paris</p>
+        </div>
+        <div class="identite">
+          <img src="image/car.svg" alt="" />
+          <p>Stationnement résidentiel</p>
+        </div>
+      </section>
+      <section>
+        <article>
+          <img src="image/enfants.jpg" alt="" />
+          <div id="test">
+            <p class="une">À la une</p>
+            <h1>
+              Les petits Parisiens dans les starting-block pour les Jeux de
+              Paris 2024
+            </h1>
+            <p class="content-article">
+              Activités périscolaires, ateliers sportifs et artistiques,
+              initiation à la nage et aux disciplines paralympiques... Paris
+              profite des prochains Jeux pour...
+            </p>
+          </div>
+        </article>
+        <div class="article2">
+          <article class="wdo">
+            <img class="img-middle" src="image/vert.jpg" alt="" />
+            <p class="description">Que faire à Paris cette semaine ?</p>
+          </article>
+          <article class="wdo">
+            <img class="img-middle" src="image/pas-contente.jpg" alt="" />
+            <p class="description">
+              12 expositions à ne pas manquer au printemps
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="secright">
+        <article>
+          <div>
+            <p class="jour">05.</p>
+            <p class="mois">04</p>
+            <p class="line"></p>
+          </div>
+          <p class="agenda">
+            4h30 · <strong>Mouvement social du 6 avril</strong>. En raison de la
+            grève du jeudi 6 avril, la circulation routière sera perturbée aux
+            abords du parcours de la manifestation.
+          </p>
+        </article>
+        <article>
+          <div>
+            <p class="jour">05.</p>
+            <p class="mois">04</p>
+          </div>
+          <div>
+            <p class="agenda">
+              14h00 · <strong>Piétonnisation</strong>. Profitez de l'avenue des
+              Champs-Elysées et du centre de Paris (secteur Paris Centre) sans
+              voiture ce dimanche 9 avril !
+            </p>
+            <a href="">EN SAVOIR +</a>
+            <img src="image/pieton.jpeg" alt="" />
+          </div>
+        </article>
+        <article>
+          <div>
+            <p class="jour">05.</p>
+            <p class="mois">04</p>
+          </div>
+          <div>
+            <p class="agenda">
+              11h25 · <strong>Soutien à la création</strong>. Designers,
+              artisans et créateurs de mode, il est encore temps de déposer un
+              dossier pour intégrer l'incubateur des Ateliers de Paris. Mise à
+              disposition d'un an d'un espace de travail individuel ou partagé
+              de 10 à 35 mètres carrés et accompagnement personnalisé avec les
+              équipes du Bureau du design, de la mode et des métiers d'art.
+              Jusqu'au 12 avril.
+            </p>
+            <a href="">EN SAVOIR +</a>
+            <img src="image/creation.jpg" alt="" />
+          </div>
+        </article>
+      </section>
     </main>
+    <footer>
+      <section class="left">
+        <img src="image/logo.png" alt="" />
+        <select id="mairie" name="mairie">
+          <option value="Les Mairies">Les Mairies</option>
+          <option value="Mairie de Paris Centre">Mairie de Paris Centre</option>
+          <option value="Mairie du 5e arrondissement">
+            Mairie du 5e arrondissement
+          </option>
+          <option value="Mairie du 5e arrondissement">
+            Mairie du 5e arrondissement
+          </option>
+        </select>
+        <div class="left-middle">
+          <div class="visit">
+            <p>Visit Paris</p>
+            <p class="red">TOURIST OFFICE</p>
+          </div>
+          <div class="visit">
+            <p>Open Data</p>
+            <p class="red">EN SAVOIR +</p>
+          </div>
+          <div class="visit">
+            <p>Démarches</p>
+            <p class="red">SERVICES EN LIGNE</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">PRESSE</a></li>
+            <li><a href="">MENTION LEGALES</a></li>
+            <li><a href="">ACCESSIBILITE</a></li>
+            <li><a href="">POLITIQUE DE COOKIES</a></li>
+            <li><a href="">PLAN DU SITE</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="right">
+        <p>Recevez chaque semaine l'actualité de votre ville</p>
+        <div>
+          <input type="text" placeholder="Votre email" />
+          <button>S'abonner</button>
+        </div>
+        <p>Suivez-nous sur les réseaux</p>
+        <div class="reseaux">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>Une question ? Contactez-nous sur</p>
+        <span>@PARISJECOUTE</span>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/987b143250.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
